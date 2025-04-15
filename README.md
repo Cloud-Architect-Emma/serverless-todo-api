@@ -50,7 +50,8 @@ A fully serverless backend for managing To-Do tasks using AWS Lambda, API Gatewa
 - [Postman](https://www.postman.com/) – API testing 
 
 ---
-📜 IAM Role Permissions
+
+## 📜 IAM Role Permissions
 To enable secure access between your Lambda functions and the DynamoDB table, the following IAM role permissions are defined in the serverless.yml:
 
 yaml
