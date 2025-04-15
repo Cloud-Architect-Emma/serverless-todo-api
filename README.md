@@ -99,10 +99,20 @@ Content-Type: application/json
 ```
 
 📌 Getting Started
-- Clone the repository  
-- Deploy your Lambda functions and set up API Gateway via AWS Console or AWS SAM  
-- Create a DynamoDB table named `ToDoTable` with `taskId` as the Partition Key  
-- Test endpoints using Postman or any REST client
+## 📌 Getting Started
+
+- Clone the repository:
+    ```bash
+    git clone https://github.com/Cloud-Architect-Emma/serverless-todo-api.git
+    cd serverless-todo-api
+    ```
+- Deploy your Lambda functions and set up API Gateway using the **Serverless Framework**:
+    ```bash
+    serverless deploy
+    ```
+- Alternatively, you can manually deploy via the AWS Console or use **AWS SAM** for deployment.
+- Create a DynamoDB table named `ToDoTable` with `taskId` as the Partition Key. (Refer to the DynamoDB section above for more details.)
+- Test the endpoints using **Postman** or any REST client.
 
 ✅ Future Improvements
 
