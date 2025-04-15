@@ -8,6 +8,19 @@
 A fully serverless backend for managing To-Do tasks using AWS Lambda, API Gateway, and DynamoDB. This project provides secure, scalable RESTful API endpoints to create, retrieve, and delete tasks — all tested via Postman.
 
 ---
+## 📚 Table of Contents
+
+- [Features](#-features)
+- [Architecture Diagram](#️-architecture-diagram)
+- [Technologies Used](#-technologies-used)
+- [API Endpoints](#-api-endpoints)
+- [DynamoDB Schema](#-dynamodb-schema)
+- [Project Structure](#-project-structure)
+- [Postman Testing](#-postman-testing)
+- [Getting Started](#-getting-started)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
+- [License](#-license)
 
 ## 📌 Features
 
@@ -29,11 +42,12 @@ A fully serverless backend for managing To-Do tasks using AWS Lambda, API Gatewa
 
 ## 🚀 Technologies Used
 
-- **AWS Lambda** – Serverless compute
-- **Amazon API Gateway** – RESTful API exposure
-- **Amazon DynamoDB** – NoSQL database
-- **IAM Roles & Policies** – Secure Lambda-DynamoDB integration
-- **Postman** – API testing
+- [AWS Lambda](https://aws.amazon.com/lambda/) – Serverless compute
+- [Amazon API Gateway](https://aws.amazon.com/api-gateway/) – RESTful API exposure
+- [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) – NoSQL database
+- [IAM Roles & Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) – Secure Lambda-DynamoDB integration
+- [Postman](https://www.postman.com/) – API testing
+
 
 ---
 
@@ -97,8 +111,6 @@ Content-Type: application/json
   "id": "example-task-id"
 }
 ```
-
-📌 Getting Started
 ## 📌 Getting Started
 
 - Clone the repository:
@@ -114,15 +126,24 @@ Content-Type: application/json
 - Create a DynamoDB table named `ToDoTable` with `taskId` as the Partition Key. (Refer to the DynamoDB section above for more details.)
 - Test the endpoints using **Postman** or any REST client.
 
-✅ Future Improvements
+
+---
+
+## ✅ Future Improvements
 
 - Add unit tests with `pytest`  
 - Add user authentication with Cognito  
 - Add pagination to `GET /tasks`  
-- Add CloudFormation or Terraform support  
+- Add CloudFormation or Terraform support
 
-👨‍💻 Author
+
+---
+
+## 👨‍💻 Author
 Built with ❤️ by **Cloud-Architect-Emma**
 
-📜 License
+
+---
+
+## 📜 License
 This project is licensed under the **MIT License**.
