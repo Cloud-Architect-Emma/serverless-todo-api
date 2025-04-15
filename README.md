@@ -80,6 +80,7 @@ Delete a task (DeleteItem)
 🔒 Always follow the principle of least privilege when granting AWS permissions.
 
 ---
+
 ## 🛠️ API Endpoints
 
 | Method | Endpoint | Description         |
