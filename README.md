@@ -13,6 +13,7 @@ A fully serverless backend for managing To-Do tasks using AWS Lambda, API Gatewa
 - [Features](#-features)
 - [Architecture Diagram](#️-architecture-diagram)
 - [Technologies Used](#-technologies-used)
+- [IAM Role Permissions](#-iam-role-permissions)
 - [API Endpoints](#-api-endpoints)
 - [DynamoDB Schema](#-dynamodb-schema)
 - [Project Structure](#-project-structure)
@@ -36,18 +37,45 @@ A fully serverless backend for managing To-Do tasks using AWS Lambda, API Gatewa
 
 ## 🖼️ Architecture Diagram
 
-![Architecture Diagram](./assets/architecture-diagram.png)
+![Architecture Diagram](./assets/architecture-diagram.jpg)
 
 ---
 
 ## 🚀 Technologies Used
 
-- [AWS Lambda](https://aws.amazon.com/lambda/) – Serverless compute
-- [Amazon API Gateway](https://aws.amazon.com/api-gateway/) – RESTful API exposure
-- [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) – NoSQL database
-- [IAM Roles & Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) – Secure Lambda-DynamoDB integration
-- [Postman](https://www.postman.com/) – API testing
+- [AWS Lambda](https://aws.amazon.com/lambda/) – Serverless compute  
+- [Amazon API Gateway](https://aws.amazon.com/api-gateway/) – RESTful API exposure  
+- [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) – NoSQL database  
+- [IAM Roles & Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) – Secure Lambda-DynamoDB integration  
+- [Postman](https://www.postman.com/) – API testing 
 
+📜 IAM Role Permissions
+To enable secure access between your Lambda functions and the DynamoDB table, the following IAM role permissions are defined in the serverless.yml:
+
+yaml
+Copy
+Edit
+provider:
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:PutItem
+        - dynamodb:GetItem
+        - dynamodb:Scan
+        - dynamodb:DeleteItem
+      Resource:
+        - arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/ToDoTable
+🛡️ This grants each Lambda function the minimum required permissions to:
+
+Create new tasks (PutItem)
+
+Retrieve all tasks (Scan)
+
+Fetch a single task (GetItem)
+
+Delete a task (DeleteItem)
+
+🔒 Always follow the principle of least privilege when granting AWS permissions.
 
 ---
 
