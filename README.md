@@ -81,13 +81,13 @@ Delete a task (DeleteItem)
 
 ---
 
-## 🛠️ API Endpoints
+## 📡 API Endpoints
 
 | Method | Endpoint | Description         |
 |--------|----------|---------------------|
-| GET    | /tasks   | Get all tasks       |
-| POST   | /tasks   | Create a new task   |
-| DELETE | /tasks   | Delete task by ID   |
+| 📥 GET    | `/tasks`   | Get all tasks       |
+| 📝 POST   | `/tasks`   | Create a new task   |
+| 🗑️ DELETE | `/tasks`   | Delete task by ID   |
 
 🔄 All endpoints are routed via **API Gateway** and handled by **individual Lambda functions**.
 
