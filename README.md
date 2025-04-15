@@ -37,7 +37,7 @@ A fully serverless backend for managing To-Do tasks using AWS Lambda, API Gatewa
 
 ## 🖼️ Architecture Diagram
 
-![Architecture Diagram](./assets/architecture-diagram.jpg)
+![Architecture Diagram](./assets/architecture-diagram.JPG)
 
 ---
 
