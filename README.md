@@ -14,7 +14,7 @@ A fully serverless backend for managing To-Do tasks using AWS Lambda, API Gatewa
 - [Architecture Diagram](#️-architecture-diagram)
 - [Technologies Used](#-technologies-used)
 - [IAM Role Permissions](#-iam-role-permissions)
-- [API Endpoints](#api-endpoints)
+- [🛠️ API Endpoints](#api-endpoints)
 - [DynamoDB Schema](#-dynamodb-schema)
 - [Project Structure](#-project-structure)
 - [Postman Testing](#-postman-testing)
