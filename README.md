@@ -89,6 +89,7 @@ Delete a task (DeleteItem)
 | DELETE | /tasks   | Delete task by ID   |
 
 🔄 All endpoints are routed via **API Gateway** and handled by **individual Lambda functions**.
+
 ---
 
 ## 📦 DynamoDB Schema
