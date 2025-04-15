@@ -70,59 +70,49 @@ serverless-todo-api/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-🧪 Postman Testing
+```
+
+## 🧪 Postman Testing
+
 Postman was used to test all endpoints with appropriate headers and JSON bodies.
 
-✅ Create Task (POST)
-http
-Copy
-Edit
+```http
+# ✅ Create Task (POST)
 POST /tasks
 Content-Type: application/json
-json
-Copy
-Edit
+
 {
   "name": "Finish documentation",
   "completed": false
 }
-📥 Get All Tasks (GET)
-http
-Copy
-Edit
+
+# 📥 Get All Tasks (GET)
 GET /tasks
-🗑️ Delete Task (DELETE)
-http
-Copy
-Edit
+
+# 🗑️ Delete Task (DELETE)
 DELETE /tasks
 Content-Type: application/json
-json
-Copy
-Edit
+
 {
   "id": "example-task-id"
 }
+```
+
 📌 Getting Started
-Clone the repository
-
-Deploy your Lambda functions and set up API Gateway via AWS Console or AWS SAM
-
-Create a DynamoDB table named ToDoTable with taskId as the Partition Key
-
-Test endpoints using Postman or any REST client
+- Clone the repository  
+- Deploy your Lambda functions and set up API Gateway via AWS Console or AWS SAM  
+- Create a DynamoDB table named `ToDoTable` with `taskId` as the Partition Key  
+- Test endpoints using Postman or any REST client
 
 ✅ Future Improvements
-Add unit tests with pytest
 
-Add user authentication with Cognito
-
-Add pagination to GET /tasks
-
-Add CloudFormation or Terraform support
+- Add unit tests with `pytest`  
+- Add user authentication with Cognito  
+- Add pagination to `GET /tasks`  
+- Add CloudFormation or Terraform support  
 
 👨‍💻 Author
-Built with ❤️ by Cloud-Architect-Emma
+Built with ❤️ by **Cloud-Architect-Emma**
 
 📜 License
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
